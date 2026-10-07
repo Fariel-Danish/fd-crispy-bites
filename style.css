@@ -1,0 +1,1096 @@
+/* ================================
+   FD CRISPY BITES - BASE STYLE
+================================ */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #FFFBEA;
+    color: #252525;
+    font-family: "Trebuchet MS", Arial, sans-serif;
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+h1,
+h2,
+h3 {
+    font-weight: bold;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+button {
+    border: none;
+    cursor: pointer;
+    font-family: inherit;
+}
+
+
+/* ================================
+   NAVIGATION BAR
+================================ */
+
+.navbar {
+    width: 100%;
+    padding: 20px 8%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    background-color: #FFFBEA;
+
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+
+    border-bottom: 2px solid #DDE8C7;
+}
+
+.logo {
+    font-size: 26px;
+    font-weight: bold;
+    color: #4F7655;
+}
+
+.logo span {
+    color: #F4A51C;
+}
+
+.nav-links {
+    display: flex;
+    gap: 30px;
+}
+
+.nav-links a {
+    font-size: 16px;
+    font-weight: bold;
+    color: #4F7655;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #F4A51C;
+}
+
+
+/* ================================
+   HERO SECTION
+================================ */
+
+.hero {
+    min-height: 90vh;
+    padding: 70px 8%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+
+    background-color: #FFFBEA;
+    overflow: hidden;
+}
+
+.hero-content {
+    max-width: 750px;
+    z-index: 2;
+}
+
+.hero-small-text {
+    color: #4F7655;
+
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 3px;
+
+    margin-bottom: 10px;
+}
+
+.hero h1 {
+    color: #4F7655;
+
+    font-size: 60px;
+    line-height: 1.1;
+
+    margin-bottom: 15px;
+}
+
+.hero h1 span {
+    color: #F4A51C;
+}
+
+.hero-description {
+    font-size: 19px;
+    color: #555;
+
+    margin-bottom: 30px;
+}
+
+
+/* Shop Now Button */
+
+.shop-btn {
+    display: inline-block;
+
+    background-color: #F4A51C;
+    color: white;
+
+    padding: 14px 32px;
+    border-radius: 30px;
+
+    font-size: 17px;
+    font-weight: bold;
+
+    box-shadow: 0 6px 15px rgba(244, 165, 28, 0.25);
+
+    transition:
+        transform 0.3s ease,
+        background-color 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+.shop-btn:hover {
+    transform: translateY(-3px);
+
+    background-color: #E59610;
+
+    box-shadow: 0 8px 20px rgba(244, 165, 28, 0.35);
+}
+
+
+/* ================================
+   HERO PRODUCT IMAGES
+================================ */
+
+.hero-products {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    gap: 25px;
+    margin-top: 55px;
+}
+
+.hero-image {
+    width: 230px;
+    height: 300px;
+
+    padding: 8px;
+
+    background-color: white;
+
+    border-radius: 25px;
+
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12);
+}
+
+.hero-image img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    border-radius: 18px;
+}
+
+
+/* Tortilla */
+
+.tortilla-image {
+    border: 3px solid #F5C86B;
+
+    animation: floatTortilla 3s ease-in-out infinite;
+}
+
+
+/* Popia */
+
+.popia-image {
+    border: 3px solid #A9C88E;
+
+    animation: floatPopia 3.5s ease-in-out infinite;
+}
+
+
+/* Floating Animation */
+
+@keyframes floatTortilla {
+
+    0%,
+    100% {
+        transform: rotate(-5deg) translateY(0);
+    }
+
+    50% {
+        transform: rotate(-5deg) translateY(-15px);
+    }
+}
+
+@keyframes floatPopia {
+
+    0%,
+    100% {
+        transform: rotate(5deg) translateY(0);
+    }
+
+    50% {
+        transform: rotate(5deg) translateY(-15px);
+    }
+}
+
+
+/* ================================
+   PRODUCTS SECTION
+================================ */
+
+.products {
+    padding: 90px 8%;
+
+    background-color: #FFFBEA;
+}
+
+
+/* Section Titles */
+
+.section-title {
+    text-align: center;
+
+    margin-bottom: 50px;
+}
+
+.section-title p {
+    color: #F4A51C;
+
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 3px;
+
+    margin-bottom: 5px;
+}
+
+.section-title h2 {
+    color: #4F7655;
+
+    font-size: 38px;
+}
+
+
+/* Product Container */
+
+.product-container {
+    display: flex;
+    justify-content: center;
+
+    gap: 40px;
+
+    flex-wrap: wrap;
+}
+
+
+/* Product Cards */
+
+.product-card {
+    width: 330px;
+
+    padding: 18px;
+
+    border-radius: 30px;
+
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.10);
+
+    transition:
+        opacity 0.7s ease,
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+.product-card.show:hover {
+    transform: translateY(-8px);
+
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+}
+
+.popia-card {
+    background-color: #E8F0D8;
+
+    border: 3px solid #A9C88E;
+}
+
+.tortilla-card {
+    background-color: #FFF1C7;
+
+    border: 3px solid #F5C86B;
+}
+
+
+/* Product Images */
+
+.product-image {
+    width: 100%;
+    height: 260px;
+
+    overflow: hidden;
+
+    border-radius: 22px;
+
+    background-color: white;
+}
+
+.product-image img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    transition: transform 0.3s ease;
+}
+
+.product-card:hover .product-image img {
+    transform: scale(1.04);
+}
+
+
+/* Product Information */
+
+.product-info {
+    text-align: center;
+
+    padding: 20px 10px 10px;
+}
+
+.product-info h3 {
+    color: #4F7655;
+
+    font-size: 23px;
+
+    margin-bottom: 10px;
+}
+
+.product-description {
+    color: #555;
+
+    font-size: 15px;
+
+    min-height: 50px;
+
+    margin-bottom: 15px;
+}
+
+.price {
+    color: #F4A51C;
+
+    font-size: 27px;
+    font-weight: bold;
+
+    margin-bottom: 18px;
+}
+
+
+/* Order Button */
+
+.order-btn {
+    display: inline-block;
+
+    padding: 11px 25px;
+
+    background-color: #F4A51C;
+    color: white;
+
+    border-radius: 25px;
+
+    font-size: 15px;
+    font-weight: bold;
+
+    transition:
+        background-color 0.3s ease,
+        transform 0.3s ease;
+}
+
+.order-btn:hover {
+    background-color: #E59610;
+
+    transform: translateY(-2px);
+}
+
+
+/* ================================
+   WHY FD CRISPY BITES
+================================ */
+
+.why-us {
+    padding: 90px 8%;
+
+    background-color: #F0F5E5;
+}
+
+.why-container {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+
+    gap: 30px;
+
+    flex-wrap: wrap;
+}
+
+.why-card {
+    width: 280px;
+
+    padding: 35px 25px;
+
+    text-align: center;
+
+    background-color: #FFFBEA;
+
+    border: 2px solid #DDE8C7;
+    border-radius: 25px;
+
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+
+    transition:
+        opacity 0.7s ease,
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+.why-card.show:hover {
+    transform: translateY(-7px);
+
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.12);
+}
+
+.why-icon {
+    font-size: 42px;
+
+    margin-bottom: 15px;
+}
+
+.why-card h3 {
+    color: #4F7655;
+
+    font-size: 20px;
+
+    margin-bottom: 10px;
+}
+
+.why-card p {
+    color: #555;
+
+    font-size: 14px;
+
+    line-height: 1.6;
+}
+
+
+/* ================================
+   ABOUT US
+================================ */
+
+.about {
+    padding: 90px 8%;
+
+    background-color: #FFFBEA;
+
+    display: flex;
+    justify-content: center;
+}
+
+.about-box {
+    max-width: 850px;
+
+    padding: 50px 60px;
+
+    text-align: center;
+
+    background-color: #FFF7D6;
+
+    border: 3px solid #F5C86B;
+    border-radius: 30px;
+
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+}
+
+.about-label {
+    color: #F4A51C;
+
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 3px;
+
+    margin-bottom: 8px;
+}
+
+.about-box h2 {
+    color: #4F7655;
+
+    font-size: 36px;
+
+    margin-bottom: 20px;
+}
+
+.about-description {
+    color: #555;
+
+    font-size: 17px;
+
+    line-height: 1.8;
+}
+
+.about-description strong {
+    color: #4F7655;
+}
+
+
+/* ================================
+   CONTACT / ORDER SECTION
+================================ */
+
+.contact {
+    padding: 90px 8%;
+
+    background-color: #F0F5E5;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-box {
+    width: 100%;
+    max-width: 900px;
+
+    padding: 60px 40px;
+
+    text-align: center;
+
+    background-color: #FFFBEA;
+
+    border: 3px solid #A9C88E;
+    border-radius: 35px;
+
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+}
+
+.contact-label {
+    color: #F4A51C;
+
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 3px;
+
+    margin-bottom: 8px;
+}
+
+.contact-box h2 {
+    color: #4F7655;
+
+    font-size: 40px;
+
+    margin-bottom: 10px;
+}
+
+.contact-description {
+    color: #555;
+
+    font-size: 18px;
+
+    margin-bottom: 30px;
+}
+
+
+/* Contact Buttons */
+
+.contact-buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    gap: 15px;
+
+    flex-wrap: wrap;
+}
+
+.contact-btn {
+    display: inline-block;
+
+    padding: 15px 35px;
+
+    color: white;
+
+    border-radius: 30px;
+
+    font-size: 17px;
+    font-weight: bold;
+
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.12);
+
+    transition:
+        transform 0.3s ease,
+        background-color 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+.contact-btn:hover {
+    transform: translateY(-3px);
+
+    box-shadow: 0 9px 20px rgba(0, 0, 0, 0.18);
+}
+
+
+/* WhatsApp */
+
+.whatsapp-btn {
+    background-color: #4F7655;
+}
+
+.whatsapp-btn:hover {
+    background-color: #3F6145;
+}
+
+
+/* Facebook */
+
+.facebook-btn {
+    background-color: #4267B2;
+}
+
+.facebook-btn:hover {
+    background-color: #365899;
+}
+
+
+/* Instagram */
+
+.instagram-btn {
+    background-color: #F4A51C;
+}
+
+.instagram-btn:hover {
+    background-color: #E59610;
+}
+
+
+/* ================================
+   FOOTER
+================================ */
+
+.footer {
+    padding: 25px 8%;
+
+    text-align: center;
+
+    background-color: #4F7655;
+    color: #FFFBEA;
+
+    font-size: 14px;
+}
+
+.footer p {
+    margin: 0;
+}
+
+
+/* ================================
+   SCROLL FADE ANIMATION
+================================ */
+
+.hero-content,
+.hero-products,
+.section-title,
+.product-card,
+.why-card,
+.about-box,
+.contact-box {
+    opacity: 0;
+    transform: translateY(40px);
+}
+
+.hero-content,
+.hero-products,
+.section-title,
+.about-box,
+.contact-box {
+    transition:
+        opacity 0.7s ease,
+        transform 0.7s ease;
+}
+
+.hero-content.show,
+.hero-products.show,
+.section-title.show,
+.product-card.show,
+.why-card.show,
+.about-box.show,
+.contact-box.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+/* ================================
+   MOVING TEXT BANNERS
+================================ */
+
+.moving-banner {
+    width: 100%;
+
+    overflow: hidden;
+
+    background-color: #4F7655;
+
+    padding: 18px 0;
+
+    white-space: nowrap;
+}
+
+.moving-text {
+    display: flex;
+
+    width: max-content;
+
+    animation: moveText 18s linear infinite;
+}
+
+.moving-text span {
+    color: #FFFBEA;
+
+    font-size: 28px;
+    font-weight: bold;
+
+    margin-right: 35px;
+}
+
+
+/* Green Banner Direction */
+
+@keyframes moveText {
+
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-50%);
+    }
+}
+
+
+/* Orange Banner */
+
+.orange-banner {
+    background-color: #F4A51C;
+}
+
+
+/* Opposite Direction */
+
+.moving-text.reverse {
+    animation: moveTextReverse 18s linear infinite;
+}
+
+@keyframes moveTextReverse {
+
+    from {
+        transform: translateX(-50%);
+    }
+
+    to {
+        transform: translateX(0);
+    }
+}
+
+
+/* ================================
+   MOBILE RESPONSIVE
+================================ */
+
+@media (max-width: 768px) {
+
+    .navbar {
+        flex-direction: column;
+
+        gap: 15px;
+
+        padding: 15px 5%;
+    }
+
+    .nav-links {
+        gap: 15px;
+
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .hero {
+        padding: 60px 5%;
+    }
+
+    .hero h1 {
+        font-size: 42px;
+    }
+
+    .hero-description {
+        font-size: 17px;
+    }
+
+    .hero-products {
+        flex-direction: column;
+
+        gap: 35px;
+    }
+
+    .hero-image {
+        width: 210px;
+        height: 275px;
+    }
+
+    .section-title h2 {
+        font-size: 30px;
+    }
+
+    .product-card {
+        width: 100%;
+        max-width: 330px;
+    }
+
+    .why-card {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    .about-box {
+        padding: 35px 25px;
+    }
+
+    .about-box h2 {
+        font-size: 30px;
+    }
+
+    .contact-box {
+        padding: 45px 20px;
+    }
+
+    .contact-box h2 {
+        font-size: 32px;
+    }
+
+    .contact-buttons {
+        flex-direction: column;
+    }
+
+    .contact-btn {
+        width: 100%;
+        max-width: 280px;
+    }
+
+    .moving-text span {
+        font-size: 22px;
+        margin-right: 25px;
+    }
+}
+/* ================================
+   SLIDE WHATSAPP BUTTON
+================================ */
+
+.whatsapp-menu {
+    position: fixed;
+    right: 0;
+    bottom: 25px;
+    z-index: 9999;
+
+    display: flex;
+    align-items: center;
+
+    transform: translateX(135px);
+    transition: transform 0.45s ease;
+}
+
+
+/* Open */
+
+.whatsapp-menu.open {
+    transform: translateX(0);
+}
+
+
+/* Round Arrow Button */
+
+.whatsapp-toggle {
+    width: 48px;
+    height: 48px;
+
+    border-radius: 50%;
+
+    background-color: #4F7655;
+    color: white;
+
+    font-size: 24px;
+    font-weight: bold;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.20);
+
+    cursor: pointer;
+
+    transition: transform 0.4s ease;
+}
+
+
+/* Rotate arrow when open */
+
+.whatsapp-menu.open .whatsapp-toggle {
+    transform: rotate(180deg);
+}
+
+/* WhatsApp Button */
+
+.whatsapp-slide-btn {
+    background-color: #4F7655;
+    color: white;
+
+    padding: 13px 20px;
+
+    border-radius: 25px 0 0 25px;
+
+    font-size: 15px;
+    font-weight: bold;
+
+    white-space: nowrap;
+
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+
+    transition: background-color 0.3s ease;
+}
+
+.whatsapp-slide-btn:hover {
+    background-color: #3F6145;
+}
+/* ================================
+   HERO BACKGROUND DECORATIONS
+================================ */
+
+.hero {
+    position: relative;
+}
+
+.hero-content,
+.hero-products {
+    position: relative;
+    z-index: 2;
+}
+
+.hero-decorations {
+    position: absolute;
+    inset: 0;
+
+    overflow: hidden;
+    pointer-events: none;
+
+    z-index: 1;
+}
+
+.decor {
+    position: absolute;
+
+    font-weight: bold;
+
+    opacity: 0.25;
+
+    animation: decorFloat 5s ease-in-out infinite;
+}
+
+/* Top Left */
+.decor-1 {
+    top: 12%;
+    left: 8%;
+
+    font-size: 45px;
+    color: #F4A51C;
+}
+
+/* Top Right */
+.decor-2 {
+    top: 18%;
+    right: 10%;
+
+    font-size: 30px;
+    color: #A9C88E;
+
+    animation-delay: 1s;
+}
+
+/* Middle Left */
+.decor-3 {
+    top: 48%;
+    left: 5%;
+
+    font-size: 32px;
+    color: #4F7655;
+
+    animation-delay: 2s;
+}
+
+/* Middle Right */
+.decor-4 {
+    top: 52%;
+    right: 7%;
+
+    font-size: 22px;
+    color: #F4A51C;
+
+    animation-delay: 0.5s;
+}
+
+/* Bottom Left */
+.decor-5 {
+    bottom: 12%;
+    left: 15%;
+
+    font-size: 35px;
+    color: #A9C88E;
+
+    animation-delay: 1.5s;
+}
+
+/* Bottom Right */
+.decor-6 {
+    bottom: 15%;
+    right: 15%;
+
+    font-size: 40px;
+    color: #F4A51C;
+
+    animation-delay: 2.5s;
+}
+
+
+/* Decoration Movement */
+
+@keyframes decorFloat {
+
+    0%,
+    100% {
+        transform: translateY(0) rotate(0deg);
+    }
+
+    50% {
+        transform: translateY(-15px) rotate(15deg);
+    }
+}
