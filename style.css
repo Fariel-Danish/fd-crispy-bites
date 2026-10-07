@@ -1,6 +1,6 @@
-/* ================================
-   FD CRISPY BITES - BASE STYLE
-================================ */
+/* ========================================
+   FD CRISPY BITES - COMPLETE STYLE
+======================================== */
 
 * {
     margin: 0;
@@ -38,9 +38,9 @@ button {
 }
 
 
-/* ================================
-   NAVIGATION BAR
-================================ */
+/* ========================================
+   NAVIGATION
+======================================== */
 
 .navbar {
     width: 100%;
@@ -78,6 +78,7 @@ button {
     font-size: 16px;
     font-weight: bold;
     color: #4F7655;
+
     transition: color 0.3s ease;
 }
 
@@ -86,9 +87,9 @@ button {
 }
 
 
-/* ================================
-   HERO SECTION
-================================ */
+/* ========================================
+   HERO / HOME
+======================================== */
 
 .hero {
     min-height: 90vh;
@@ -103,31 +104,35 @@ button {
 
     background-color: #FFF2C9;
 
-    overflow: hidden;
     position: relative;
+    overflow: hidden;
 }
 
 .hero-content {
     max-width: 750px;
+
     position: relative;
     z-index: 2;
 }
 
 
-/* Hero Logo */
+/* HERO LOGO */
 
 .hero-logo {
-    width: 150px;
+    width: 110px;
     height: auto;
 
-    margin-bottom: 15px;
+    display: block;
+
+    margin: 0 auto 15px;
 
     object-fit: contain;
 
-    border-radius: 20px;
+    border-radius: 18px;
 
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.10);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.10);
 }
+
 
 .hero-small-text {
     color: #4F7655;
@@ -160,7 +165,7 @@ button {
 }
 
 
-/* Shop Now Button */
+/* SHOP NOW */
 
 .shop-btn {
     display: inline-block;
@@ -169,6 +174,7 @@ button {
     color: white;
 
     padding: 14px 32px;
+
     border-radius: 30px;
 
     font-size: 17px;
@@ -191,9 +197,9 @@ button {
 }
 
 
-/* ================================
+/* ========================================
    HERO PRODUCT IMAGES
-================================ */
+======================================== */
 
 .hero-products {
     display: flex;
@@ -201,6 +207,7 @@ button {
     align-items: center;
 
     gap: 25px;
+
     margin-top: 55px;
 
     position: relative;
@@ -229,26 +236,17 @@ button {
     border-radius: 18px;
 }
 
-
-/* Tortilla */
-
 .tortilla-image {
     border: 3px solid #F5C86B;
 
     animation: floatTortilla 3s ease-in-out infinite;
 }
 
-
-/* Popia */
-
 .popia-image {
     border: 3px solid #A9C88E;
 
     animation: floatPopia 3.5s ease-in-out infinite;
 }
-
-
-/* Floating Animation */
 
 @keyframes floatTortilla {
 
@@ -275,18 +273,15 @@ button {
 }
 
 
-/* ================================
-   PRODUCTS SECTION
-================================ */
+/* ========================================
+   PRODUCTS
+======================================== */
 
 .products {
     padding: 90px 8%;
 
     background-color: #FFF2C9;
 }
-
-
-/* Section Titles */
 
 .section-title {
     text-align: center;
@@ -310,9 +305,6 @@ button {
     font-size: 38px;
 }
 
-
-/* Product Container */
-
 .product-container {
     display: flex;
     justify-content: center;
@@ -321,9 +313,6 @@ button {
 
     flex-wrap: wrap;
 }
-
-
-/* Product Cards */
 
 .product-card {
     width: 330px;
@@ -358,9 +347,6 @@ button {
     border: 3px solid #F5C86B;
 }
 
-
-/* Product Images */
-
 .product-image {
     width: 100%;
     height: 260px;
@@ -384,9 +370,6 @@ button {
 .product-card:hover .product-image img {
     transform: scale(1.04);
 }
-
-
-/* Product Information */
 
 .product-info {
     text-align: center;
@@ -421,9 +404,6 @@ button {
     margin-bottom: 18px;
 }
 
-
-/* Order Button */
-
 .order-btn {
     display: inline-block;
 
@@ -449,9 +429,9 @@ button {
 }
 
 
-/* ================================
+/* ========================================
    WHY FD CRISPY BITES
-================================ */
+======================================== */
 
 .why-us {
     padding: 90px 8%;
@@ -479,6 +459,7 @@ button {
     background-color: #FFF6D8;
 
     border: 2px solid #DDE8C7;
+
     border-radius: 25px;
 
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
@@ -518,9 +499,9 @@ button {
 }
 
 
-/* ================================
+/* ========================================
    ABOUT US
-================================ */
+======================================== */
 
 .about {
     padding: 90px 8%;
@@ -532,6 +513,7 @@ button {
 }
 
 .about-box {
+    width: 100%;
     max-width: 850px;
 
     padding: 50px 60px;
@@ -541,6 +523,7 @@ button {
     background-color: #FFEAB0;
 
     border: 3px solid #F5C86B;
+
     border-radius: 30px;
 
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
@@ -577,9 +560,9 @@ button {
 }
 
 
-/* ================================
-   CONTACT / ORDER SECTION
-================================ */
+/* ========================================
+   CONTACT
+======================================== */
 
 .contact {
     padding: 90px 8%;
@@ -602,6 +585,7 @@ button {
     background-color: #FFF6D8;
 
     border: 3px solid #A9C88E;
+
     border-radius: 35px;
 
     box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
@@ -632,9 +616,6 @@ button {
 
     margin-bottom: 30px;
 }
-
-
-/* Contact Buttons */
 
 .contact-buttons {
     display: flex;
@@ -672,9 +653,6 @@ button {
     box-shadow: 0 9px 20px rgba(0, 0, 0, 0.18);
 }
 
-
-/* WhatsApp */
-
 .whatsapp-btn {
     background-color: #4F7655;
 }
@@ -683,9 +661,6 @@ button {
     background-color: #3F6145;
 }
 
-
-/* Facebook */
-
 .facebook-btn {
     background-color: #4267B2;
 }
@@ -693,9 +668,6 @@ button {
 .facebook-btn:hover {
     background-color: #365899;
 }
-
-
-/* Instagram */
 
 .instagram-btn {
     background-color: #F4A51C;
@@ -706,9 +678,9 @@ button {
 }
 
 
-/* ================================
+/* ========================================
    FOOTER
-================================ */
+======================================== */
 
 .footer {
     padding: 25px 8%;
@@ -726,9 +698,9 @@ button {
 }
 
 
-/* ================================
+/* ========================================
    SCROLL FADE ANIMATION
-================================ */
+======================================== */
 
 .hero-content,
 .hero-products,
@@ -738,6 +710,7 @@ button {
 .about-box,
 .contact-box {
     opacity: 0;
+
     transform: translateY(40px);
 }
 
@@ -759,13 +732,14 @@ button {
 .about-box.show,
 .contact-box.show {
     opacity: 1;
+
     transform: translateY(0);
 }
 
 
-/* ================================
-   MOVING TEXT BANNERS
-================================ */
+/* ========================================
+   MOVING BANNERS
+======================================== */
 
 .moving-banner {
     width: 100%;
@@ -807,15 +781,9 @@ button {
     }
 }
 
-
-/* Orange Banner */
-
 .orange-banner {
     background-color: #F4A51C;
 }
-
-
-/* Opposite Direction */
 
 .moving-text.reverse {
     animation: moveTextReverse 18s linear infinite;
@@ -833,14 +801,16 @@ button {
 }
 
 
-/* ================================
-   SLIDE WHATSAPP BUTTON
-================================ */
+/* ========================================
+   FLOATING WHATSAPP
+======================================== */
 
 .whatsapp-menu {
     position: fixed;
+
     right: 0;
     bottom: 25px;
+
     z-index: 9999;
 
     display: flex;
@@ -873,8 +843,6 @@ button {
 
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.20);
 
-    cursor: pointer;
-
     transition: transform 0.4s ease;
 }
 
@@ -905,15 +873,17 @@ button {
 }
 
 
-/* ================================
-   HERO BACKGROUND DECORATIONS
-================================ */
+/* ========================================
+   HERO DECORATIONS
+======================================== */
 
 .hero-decorations {
     position: absolute;
+
     inset: 0;
 
     overflow: hidden;
+
     pointer-events: none;
 
     z-index: 1;
@@ -934,6 +904,7 @@ button {
     left: 8%;
 
     font-size: 45px;
+
     color: #F4A51C;
 }
 
@@ -942,6 +913,7 @@ button {
     right: 10%;
 
     font-size: 30px;
+
     color: #A9C88E;
 
     animation-delay: 1s;
@@ -952,6 +924,7 @@ button {
     left: 5%;
 
     font-size: 32px;
+
     color: #4F7655;
 
     animation-delay: 2s;
@@ -962,6 +935,7 @@ button {
     right: 7%;
 
     font-size: 22px;
+
     color: #F4A51C;
 
     animation-delay: 0.5s;
@@ -972,6 +946,7 @@ button {
     left: 15%;
 
     font-size: 35px;
+
     color: #A9C88E;
 
     animation-delay: 1.5s;
@@ -982,6 +957,7 @@ button {
     right: 15%;
 
     font-size: 40px;
+
     color: #F4A51C;
 
     animation-delay: 2.5s;
@@ -1000,9 +976,9 @@ button {
 }
 
 
-/* ================================
+/* ========================================
    MOBILE RESPONSIVE
-================================ */
+======================================== */
 
 @media (max-width: 768px) {
 
@@ -1022,12 +998,13 @@ button {
     }
 
     .hero {
+        min-height: auto;
+
         padding: 60px 5%;
     }
 
     .hero-logo {
-        width: 125px;
-        border-radius: 18px;
+        width: 95px;
     }
 
     .hero h1 {
@@ -1090,6 +1067,7 @@ button {
 
     .moving-text span {
         font-size: 22px;
+
         margin-right: 25px;
     }
 }
